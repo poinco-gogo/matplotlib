@@ -32,9 +32,9 @@ def plot_msd(aa, irep):
 	d = 0.0
 	with open(fname) as f:
 		s = f.readlines()
-		a = float(s[3].split()[3]) * 0.1
-		b = float(s[4].split()[3])
-		d = float(s[6].split()[5])
+		a = float(s[4].split()[3]) * 0.1
+		b = float(s[5].split()[3])
+		d = float(s[7].split()[5])
 		xx = np.arange(200,1001)
 		yy = a * xx + b
 		aa.plot(xx, yy, color='blue')
